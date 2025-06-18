@@ -3,8 +3,8 @@
 set -x
 
 if [[ "$(cat .moon/workspace.yml | grep unstable_remote)" == "" ]]; then
-    echo "This test requires unstable_remote to be set in workspace.yml"
-    exit 1
+  echo "This test requires unstable_remote to be set in workspace.yml"
+  exit 1
 fi
 
 mkdir -p target/test
