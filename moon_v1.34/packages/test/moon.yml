@@ -1,0 +1,13 @@
+
+$schema: https://moonrepo.dev/schemas/project.json
+id: 'test'
+type: unknown
+
+tasks:
+  make-phony-file:
+    command: sh
+    args:
+      - -c
+      - echo "This is a phony file" > $workspaceRoot/target/phony-file.txt
+    outputs:
+      - $workspaceRoot/target/phony-file.txt
